@@ -1,4 +1,4 @@
-import SearchBar from "../components/SearchBar";
+import App from "../components/App";
 import { Handshake } from "lucide-react";
 
 export default function Home() {
@@ -9,6 +9,6 @@ export default function Home() {
     Mergers & Acquisitions Search
     </h1>
     <p className="text-center mb-8">Find recent or historic M&A activity by company name</p>
-    <SearchBar />
+    <App />
   </>);
 }
