@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,10 +18,48 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+
+  .cards-container {
+    background: linear-gradient(to bottom right, #18181b, #171717, #27272a);
+  }
+
+  input {
+    color: #ededed;
+
+    &::placeholder {
+        color: #ededed;
+    }
+  }
+
+  form + h2 {
+    color: #ededed;
+  }
+
+  .result-card {
+    background: #333;
+
+    h2,
+    p {
+      color: #ededed;
+    }
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, .title, strong {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 87.5;
+  }
+
+button {
+    cursor: pointer;
 }
