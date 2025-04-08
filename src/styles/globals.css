@@ -38,8 +38,9 @@ body {
     }
   }
 
-  h2,
+  h2, h3, label,
   .result-card h2,
+  .result-card h3,
   .result-card p {
     color: #ededed;
   }

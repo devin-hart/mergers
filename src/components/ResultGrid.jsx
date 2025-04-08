@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ResultCard from "./ResultCard";
 import SkeletonCard from "./SkeletonCard";
 
-const ResultGrid = ({ results, loading, error, hasSearched, onCardClick }) => (
+const ResultGrid = ({ results, loading, error, hasSearched }) => (
   <section aria-labelledby="results-heading">
     <div className="min-h-[3rem] flex justify-center items-center mb-4">
       <AnimatePresence mode="wait">
@@ -42,7 +42,7 @@ const ResultGrid = ({ results, loading, error, hasSearched, onCardClick }) => (
         className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
         {results.map((item, index) => (
-          <ResultCard key={index} item={item} onProfileClick={() => onCardClick(item.symbol)} />
+          <ResultCard key={index} item={item} />
         ))}
       </section>
     )}
